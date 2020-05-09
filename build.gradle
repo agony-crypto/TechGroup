@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+    id 'pmd'
+}
+
+group 'org.techgroup'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+// Checkstyle configuration
+checkstyle {
+    toolVersion = '8.11'
+}
+
+// PMD configuration
+pmd {
+    ruleSets = ["java-basic", "java-braces", "java-unnecessary", "java-unusedcode"]
+    toolVersion = '6.0.0'
+}
+
+tasks.withType(Checkstyle) {
+    exclude '**/org/techgroup/cinthia_argote/**'
+}
