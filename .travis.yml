@@ -10,4 +10,4 @@ addons:
       secure: $SONAR_TOKEN # encrypted value of your token
 script:
   # other script steps might be done before running the actual analysis
-  - sonar-scanner
+  - gradle check
