@@ -2,23 +2,28 @@
 
 #language: java
 
+jdk:
+- oraclejdk11
+
+sudo: required
+
 #script:
   # other script steps might be done before running the actual analysis
 #  - gradle check
 
-language: java
-jdk:
-- oraclejdk11
-sudo: required
+#language: java
+#jdk:
+#- oraclejdk11
+#sudo: required
 
-branches:
-only: develop
+#branches:
+#only: develop
 
-before_script:
-  - wget http://services.gradle.org/distributions/gradle-4.7-bin.zip
-  - unzip gradle-4.7-bin.zip
-  - export GRADLE_USER_HOME=$PWD/gradle-4.7
-  - export PATH=$GRADLE_USER_HOME/bin:$PATH
+#before_script:
+#  - wget http://services.gradle.org/distributions/gradle-4.7-bin.zip
+#  - unzip gradle-4.7-bin.zip
+#  - export GRADLE_USER_HOME=$PWD/gradle-4.7
+#  - export PATH=$GRADLE_USER_HOME/bin:$PATH
   
-script:
-- gradle test
+#script:
+#- gradle test
