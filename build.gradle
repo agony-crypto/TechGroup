@@ -41,12 +41,3 @@ tasks.withType(FindBugs) {
 tasks.withType(Checkstyle) {
     exclude '**/org/techgroup/cinthia_argote/**'
 }
-
-//sonarqube {
-//    properties {
-//        property "sonar.projectKey", "agony-crypto_TechGroup"
-//        property "sonar.organization", "techgroup"
-//        property "sonar.host.url", "https://sonarcloud.io"
-//        property "sonar.login", "a54b455d4ba0a5f8e593db7c579005a5c607b35d"
-//    }
-//}
