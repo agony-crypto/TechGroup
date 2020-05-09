@@ -1,5 +1,8 @@
 language: java
 
+branches:
+only: develop
+
 addons:
   sonarcloud:
     organization: "techgroup" # the key of the org you chose at step #3
