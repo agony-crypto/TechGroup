@@ -7,9 +7,9 @@ jdk:
 
 sudo: required
 
-#script:
+script:
   # other script steps might be done before running the actual analysis
-#  - gradle check
+  - gradle check
 
 #language: java
 #jdk:
