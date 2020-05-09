@@ -1,8 +1,5 @@
 language: java
 
-branches:
-only: develop
-
 addons:
   sonarcloud:
     organization: "techgroup" # the key of the org you chose at step #3
@@ -10,4 +7,4 @@ addons:
       secure: $SONAR_TOKEN # encrypted value of your token
 script:
   # other script steps might be done before running the actual analysis
-  - gradle check
+  - gradlew check
